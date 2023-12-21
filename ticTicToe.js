@@ -53,8 +53,10 @@ boxes.forEach((box)=>{
       }
       box.disabled=true;
       count++;
+      console.log(count);
       if(count===9){
         draw();
+        count=0;
       }
       checkWinner();
       
