@@ -13,6 +13,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    
 }
 .container{
     height: 70vh;
@@ -42,8 +43,9 @@ h1{
 }
 .restBtn{
     border: none;
-    background-color:#73BA9B;
-    color: #01110A;
+    background-color:#01110A;
+   
+    color: #73BA9B;
     font-size: 1.2rem;
     height: 6vh;
     width: 18vh;
@@ -75,3 +77,15 @@ h1{
     border: none;
 
 }
+.light{
+    background-color: #caf0f8;
+
+}
+.mode{
+    background-color: #01110A;
+    color: #73BA9B;
+    border: none;
+    height: 4vmin;
+    font-size: 1rem;
+}
+

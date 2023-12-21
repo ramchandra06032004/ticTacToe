@@ -2,8 +2,10 @@ let boxes=document.querySelectorAll("#box");
 let resetBtn=document.querySelector(".restBtn");
 let newGameBtn=document.querySelector(".new-Game");
 let msgContainer=document.querySelector(".msg");
-let msg=document.querySelector(".Winner")
-
+let msg=document.querySelector(".Winner");
+let mode=document.querySelector(".mode");
+let body=document.querySelector("body");
+let currentMode="dark";
 
 let turnO=true;
 const winPattern=[
@@ -91,5 +93,24 @@ const checkWinner=()=>{
 
 resetBtn.addEventListener("click",resetGame);
 newGameBtn.addEventListener("click",resetGame);
+
+const darkMode=()=>{
+    if(currentMode==="light"){
+        body.style.backgroundColor="#01110A";
+        mode.style.backgroundColor="#01110A";
+        resetBtn.style.backgroundColor="#01110A";
+        newGameBtn.style.backgroundColor="#01110A";
+        currentMode="dark";
+    }
+    else{
+        body.style.backgroundColor="#caf0f8";
+        mode.style.backgroundColor="#caf0f8";
+        resetBtn.style.backgroundColor="#caf0f8";
+        newGameBtn.style.backgroundColor="#caf0f8";
+        currentMode="light";
+        
+    }
+}
+mode.addEventListener("click",darkMode);
 
 
