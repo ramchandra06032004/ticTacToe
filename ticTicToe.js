@@ -24,6 +24,7 @@ const resetGame=()=>{
     turnO=true;
     msgContainer.classList.add("hide");
     enableBtn();
+    count=0;
 
 };
 
